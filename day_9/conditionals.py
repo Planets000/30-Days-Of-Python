@@ -52,14 +52,16 @@ Grades = '''sh
 grade = float(input('What is your grade: '))
 if grade >= 90 and grade <= 100:
     print('You Got An A!')
-elif grade >= 80:
+elif grade >= 80 and grade<= 89:
     print('You Got a B!')
-elif grade >= 70:
+elif grade >= 70 and grade<= 79:
     print('You Got a C')
-elif grade >= 60:
+elif grade >= 60 and grade<= 69:
     print('You Got a D')
-else:
+elif grade >= 0 and grade<= 59:
     print('You Got an F')
+else:
+    print('Incorrect Input')
 
 print('What Month Is It?')
 usr_month = input('What Month is it: ')
